@@ -1,0 +1,35 @@
+exclude: ^$
+fail_fast: false
+repos:
+  - hooks:
+      - exclude: (.git/)
+        id: forbid-tabs
+      - exclude: (.git/)
+        id: remove-tabs
+    repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.9
+  - hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - exclude: mkdocs.yml
+        id: check-yaml
+      - id: check-json
+      - id: detect-private-key
+      - id: check-merge-conflict
+      - id: check-docstring-first
+    repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+  - hooks:
+      - id: ruff
+    repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.245
+  - hooks:
+      - id: black
+    repo: https://github.com/psf/black
+    rev: 23.1.0
+  - hooks:
+      - id: commitizen
+        stages:
+          - commit-msg
+    repo: https://github.com/commitizen-tools/commitizen
+    rev: v2.42.0
