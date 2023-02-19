@@ -1,7 +1,5 @@
-# {{ cookiecutter.project_name }}
+# Python Hatch Managed Cookiecutter template
 
-[![PyPI - Version](https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }}.svg)](https://pypi.org/project/{{ cookiecutter.project_slug }})
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/{{ cookiecutter.project_slug }}.svg)](https://pypi.org/project/{{ cookiecutter.project_slug }})
 [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
 [![linting - Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v0.json)](https://github.com/charliermarsh/ruff)
 [![code style - Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -16,8 +14,11 @@
 ## Installation
 
 ```bash
-pip install {{ cookiecutter.project_slug }}
+pip install cookiecutter
+cookiecutter gh:KingMichaelPark/hatch-python-cookiecutter
 ```
+
+## Preview of Generated Project
 
 ## Development
 
